@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div>p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            width: 200px;
+            background-color: aqua;
+        }
+
+        a::after {
+            content: '⇐';
+        }
+        a::before {
+            content: '⇒';
+        }
+
+        ul {
+            list-style: none;
+        border: solid 3PX rgb(191, 0, 0);
+        outline: solid 3px rgb(73, 73, 73);
+        }
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <h2>Subtitulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quaerat. 
+    Ut voluptate a quaerat tempora voluptatum at alias nulla consequatur voluptates perferendis reiciendis dolor qui fugiat architecto, ullam explicabo deleniti.</p>
+    <div>
+        <h2>Passe o mouse aqui e descubra</h2>
+            <p>Texto escondido</p>
+    </div>
+
+    <h1>Pseudo-elemnetos</h1>
+    <h2>Como colocar coisas depois</h2>
+    <ul>
+        <li><a href="">exemplo</a></li>
+    </ul>
+
+    
+    
+</body>
+</html>

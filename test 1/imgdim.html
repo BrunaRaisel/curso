@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>
+        Imagens Dinâmicas
+    </h1>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="media.png" type="image/png">
+        
+        <img src="garnde.png" alt="imagem grande">
+    </picture>
+
+    <h1>Vamos reproduzir áudios</h1>
+    <audio preload="metadata" controls loop >
+        <source src="Moonlight in Mexico - Jimena Contreras.mp3" type="audio/mpeg">
+        <source src="Moonlight in Mexico - Jimena Contreras.ogg" type="audio/ogg">
+        <source src="Moonlight in Mexico - Jimena Contreras.wav" type="audio/wav">
+        <p>
+            Infelizmente seu navegador não consegue reproduzir audio acesse o link e baixe 
+            <a href="Moonlight in Mexico - Jimena Contreras.mp3">aqui</a>
+        </p>
+        
+
+    </audio>
+    <!--Formatos compatievis: MP3 OGG, WAV
+    preload: metadata: baixa só o básico, auto: baixa tudo, none: baixa nada
+    parametro: autoplay 
+-->
+    <h1>Vamos inserir vídeos</h1>
+    <video width="300px" controls>
+        <source src="video.mp4" type="video/mp4">
+
+    </video>
+    <!--coloque pelo menos 3 formatoos de video q nem na img, 
+    mas jamias hospede todos pois pode sair muito caro e deixar o site lento/
+assim, coloque videos dum link extreno colocando videoos de sites dehospedagem de vídeos como o youtube-->
+    <h1>Colocando vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xyUmcRkQthk?si=LQKKLLl7vmZPdkCQ" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+    </iframe>
+</body>
+</html>
